@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPdart</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-container">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="{{ url_for('sell') }}">Sell</a>
+                    <!-- <a href="{{ url_for('help') }}">Help</a> -->
+                    <a href="{{ url_for('view') }}">View products</a>
+                    <!-- <div class="menu-aboutUs" id="menu-aboutUs"></div> -->
+                </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <center><a href="{{ url_for('index') }}"><img class="logo-img" src="\static\logo.png" alt="logo" ></a> </center>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">&#128269;</button>  
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('vehicles')}}">Vehicle</a></li>
+                <li><a href="{{ url_for('electronics')}}">Electronics</a></li>
+                <li><a href="{{ url_for('furnitures')}}">Furniture</a></li>
+                <li><a href="{{ url_for('books')}}">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center><h1>Buy vehicles here</h1></center>
+
+    <div class="card-container">
+    <article class="card">
+        <img class="card__background" src="static/vehicles/Ford.jpg" alt="Photo of Cartagena's cathedral at the background and some colonial style houses"/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Ford</h2>
+                <p class="card__description">
+                    Price: Rs.300000 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 7 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/Jeep.jpg" alt="Photo of Cartagena's cathedral at the background and some colonial style houses"/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Jeep</h2>
+                <p class="card__description">
+                    Price: Rs.900000 &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 7 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/i20.jpeg.jpg" alt="Photo of Cartagena's cathedral at the background and some colonial style houses"/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">I20</h2>
+                <p class="card__description">
+                    Price: Rs.300000 &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 5 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/BMW.jpeg.jpg" alt="Photo of Cartagena's cathedral at the background and some colonial style houses"/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">BMW</h2>
+                <p class="card__description">
+                    Price: Rs.2300000 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 9 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/Scorpio.jpg" alt=""/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Scorpio</h2>
+                <p class="card__description">
+                    Price: Rs.900000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 11 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/innova.webp" alt=""/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Innova</h2>
+                <p class="card__description">
+                    Price: Rs.700000 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 10 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+
+    <article class="card">
+        <img class="card__background" src="static/vehicles/Hyundai.jpg" alt=""/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Hyundai</h2>
+                <p class="card__description">
+                    Price: Rs.300000 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 7 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+    <article class="card">
+        <img class="card__background" src="static/vehicles/thar.webp" alt=""/>
+        <div class="card__content flow">
+            <div class="card__content--container flow">
+                <h2 class="card__title">Thar</h2>
+                <p class="card__description">
+                    Price: Rs.600000 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+                    years used: 6 years 
+                </p>
+            </div>
+            <button class="card__button open-html-button" data-target="Buy.html">Buy</button>
+        </div>
+    </article>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <footer>
+        <p>&copy; 2024 UpDART. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPdart</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-container">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="{{ url_for('sell') }}">Sell</a>
+                    <a href="{{ url_for('help') }}">Help</a>
+                    <div class="menu-aboutUs" id="menu-aboutUs"></div>
+                </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <center><a href="{{ url_for('index') }}"><img class="logo-img" src="\static\logo.png" alt="logo" ></a> </center>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">&#128269;</button>  
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('vehicles')}}">Vehicle</a></li>
+                <li><a href="{{ url_for('electronics')}}">Electronics</a></li>
+                <li><a href="{{ url_for('furnitures')}}">Furniture</a></li>
+                <li><a href="{{ url_for('books')}}">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <center>
+        <fieldset style="border-radius: 10px; background-color: #FFBF69; border: 2px solid;max-width:400px;text-align: left;">
+            <legend style="font-weight: bold;font-size: 25px;padding:0px 10px 0px 10px;border: 2px solid black;border-radius: 1000px; background-color: #764301;color:white;">Buy</legend>
+            <form method="POST" enctype="multipart/form-data">
+                <p>Product name: <input type="text" name="product_name" placeholder="Product Name" required></p>            
+                <!-- <p>Product price: <input type="text" name="product_price" placeholder="Product Price" required></p>
+                <p>Years used: <input type="text" name="used_years" placeholder="Used Years" required></p>
+                <p>Owner name : <input type="text" name="owner_name" placeholder="Owner Name" required></p>
+                <p>Contact : <input type="text" name="contact" placeholder="Contact" required></p>
+                <p>Image : <input type="file" name="image" placeholder="Image" required></p> -->
+                <button type="submit">Buy</button>
+            </form>
+        </fieldset>
+        </center>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
